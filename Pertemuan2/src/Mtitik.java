@@ -18,8 +18,8 @@ public class Mtitik {
         T1.setOrdinat(10);
         T1.printTitik();
 
-        Titik T1 = new Titik(); //Membuat objek titik T1 (0,0)
-        Titik T2 = new Titik(3,5); //Membuat objek titik T2 (3,5)
+        T1 = new Titik(); //Membuat objek titik T1 (0,0)
+        T2 = new Titik(3,5); //Membuat objek titik T2 (3,5)
 
         System.out.println("Jumlah Objek Titik = " + Titik.getCounterTitik());
         System.out.println("Jumlah Objek Titik = " + T2.getCounterTitik());
