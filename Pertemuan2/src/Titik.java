@@ -5,8 +5,8 @@
 
 public class Titik {
     //Atribut
-    double absis;
-    double ordinat;
+    private double absis;
+    private double ordinat;
     static int counterTitik = 0;
 
     //Method
@@ -93,11 +93,11 @@ public class Titik {
         return jarakPusat;
     }
 
-    double getRefleksiX(){
+    Titik getRefleksiX(){
         return new Titik(absis, -ordinat);
     }
 
-    double getRefleksiY(){
+    Titik getRefleksiY(){
         return new Titik(-absis, ordinat);
     }
 }
