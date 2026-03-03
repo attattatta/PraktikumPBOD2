@@ -1,3 +1,8 @@
+//nama file : MGaris.java
+//Pembuat : Naufal Rayan Attallah
+//Deskripsi : berisi atribut dan method dalam class garis
+//Tanggal : 01-03-2026
+
 public class MGaris {
     public static void main(String[] args) {
         Titik T1 = new Titik(2, 3);
