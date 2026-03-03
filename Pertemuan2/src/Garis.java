@@ -1,3 +1,8 @@
+//nama file : Garis.java
+//Pembuat : Naufal Rayan Attallah
+//Deskripsi : berisi atribut dan method dalam class garis
+//Tanggal : 01-03-2026
+
 public class Garis {
     //Atribut
     Titik garisawal;
