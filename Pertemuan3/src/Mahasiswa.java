@@ -44,8 +44,8 @@ public class Mahasiswa {
         return kendaraan;
     }
 
-    public MataKuliah getListMatKul(int index) {
-        return listMatKul.get(index);
+    public MataKuliah getListMataKul() {
+        return new MataKuliah("", "", listMatKul.size());
     }
 
     public MataKuliah getJumlahSKS() {
@@ -64,6 +64,11 @@ public class Mahasiswa {
         int i;
         for (i = 0; i < listMatKul.size(); i++){
             System.out.println(listMatKul.get(i).getNama());
+        }
+        if (listMatKul.size() == 0){
+            System.out.println("Tidak ada mata kuliah yang diambil");
+        } else {
+            System.out.println("Jumlah SKS : " + getJumlahSKS().getJumlahSKS());
         }
     }
 }
