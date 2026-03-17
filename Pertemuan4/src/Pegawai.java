@@ -25,7 +25,7 @@ public abstract class Pegawai {
     }
 
     public String getMasaKerja() {
-        LocalDate sekarang = LocalDate.of(2025, 3, 10); // Sesuai instruksi gambar
+        LocalDate sekarang = LocalDate.of(2025, 3, 10);
         Period periode = Period.between(tmt, sekarang);
         return periode.getYears() + " tahun " + periode.getMonths() + " bulan";
     }

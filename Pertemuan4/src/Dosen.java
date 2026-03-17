@@ -26,7 +26,6 @@ class DosenTetap extends Dosen {
 
     @Override
     public LocalDate hitungTanggalPensiun() {
-        // Tgl Lahir + 65 tahun, jatuh pada tanggal 1 bulan berikutnya
         return tanggalLahir.plusYears(65).plusMonths(1).withDayOfMonth(1);
     }
 
@@ -63,7 +62,7 @@ class DosenTamu extends Dosen {
 
     @Override
     public LocalDate hitungTanggalPensiun() {
-        return kontrakBerakhir; // Untuk dosen tamu, pensiun = akhir kontrak
+        return kontrakBerakhir;
     }
 
     @Override
@@ -71,7 +70,6 @@ class DosenTamu extends Dosen {
         System.out.println("NIP             : " + nip);
         System.out.println("NIDK            : " + nidk);
         System.out.println("Nama            : " + nama);
-        // ... (sisanya menyesuaikan format Dosen Tetap)
         System.out.printf("Tunjangan       : 2.5%% x Rp %.2f = Rp %.2f\n", gajiPokok, hitungTunjangan());
     }
 }
