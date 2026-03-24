@@ -3,14 +3,21 @@
 //deskripsi : kelas BangunDatar sebagai kelas induk untuk berbagai jenis bangun dat
 //nama file : BangunDatar.java
 
-class BangunDatar {
+public abstract class BangunDatar {
     private int jmlSisi;
     private String warna;
     private String border;
     private static int counterBangunDatar = 0;
 
+    public abstract double getKeliling();
+    public abstract double getLuas();
+
     public BangunDatar(){
         counterBangunDatar++;
+    }
+
+    public boolean isEqualLuas(BangunDatar other){
+        return this.getLuas() == other.getLuas();
     }
 
     public BangunDatar(int jmlSisi, String warna, String border) {

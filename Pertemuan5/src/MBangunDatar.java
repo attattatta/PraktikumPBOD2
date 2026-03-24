@@ -1,21 +1,33 @@
 public class MBangunDatar {
-    public void cekLuas(BangunDatar X, BangunDatar Y){
-        if(X.isEqualLuas(Y)){
-            System.out.println("Luas kedua bangun datar sama");
-        } else {
-            System.out.println("Luas kedua bangun datar berbeda");
-        }
-    }
-
     public static void main(String[] args) {
-        BangunDatar B1 = new BangunDatar();
-        BangunDatar P1 = new Persegi(10);
-        BangunDatar L1 = new Lingkaran(7);
-        BangunDatar P2 = new Persegi(5);
-        BangunDatar L2 = new Lingkaran(14);
+        BangunDatar P1 = new Persegi(10, "Merah", "Solid");
+        BangunDatar L1 = new Lingkaran(7, "Biru", "Dashed");
+        
+        Persegi P2 = new Persegi(5, "Kuning", "None");
+        Lingkaran L2 = new Lingkaran(14, "Hijau", "Solid");
 
-        MBangunDatar app = new MBangunDatar();
-        app.cekLuas(B1, P1);
-        app.cekLuas(P1, P2);
+        System.out.println("\nInfo Persegi P1:");
+        P1.printInfo();
+        System.out.println("Luas: " + P1.getLuas());
+
+        System.out.println("\nInfo Lingkaran L1:");
+        L1.printInfo();
+        System.out.println("Keliling: " + L1.getKeliling());
+
+        P2.zoomIn(); 
+        System.out.println("Setelah zoomIn: " + P2.getSisi());
+        
+        P2.zoomOut(); 
+        System.out.println("Setelah zoomOut: " + P2.getSisi());
+        
+        P2.zoom(50); 
+        System.out.println("Setelah zoom 50%: " + P2.getSisi());
+
+        System.out.println("Jari-jari awal: " + L2.getJariJari());
+
+        L2.zoom(100);
+        System.out.println("Setelah zoom 100%: " + L2.getJariJari());
+
+        BangunDatar.printCounterBangunDatar();
     }
 }
