@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 public class Dosen {
     //atribut
     private String nama;
