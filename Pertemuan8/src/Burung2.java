@@ -1,5 +1,5 @@
-public class Burung extends Anabul {
-    public Burung(String nama) {
+public class Burung2 extends Anabul2 {
+    public Burung2(String nama) {
         super(nama);
     }
 

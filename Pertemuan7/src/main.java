@@ -31,9 +31,9 @@ public class main {
         m4.cetakInfo();
 
         System.out.println("=== 3. ANABUL ===");
-        Anabul a1 = new Kucing("Oggy");
-        Anabul a2 = new Anjing("Dawg");
-        Anabul a3 = new Burung("Mordecai");
+        Anabul2 a1 = new Kucing("Oggy");
+        Anabul2 a2 = new Anjing("Dawg");
+        Anabul2 a3 = new Burung("Mordecai");
 
         a1.gerak();
         a1.bersuara();

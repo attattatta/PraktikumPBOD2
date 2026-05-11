@@ -3,10 +3,10 @@
 //NIM : 24060124140170
 //Tanggal : 28 April 2026
 
-public class Anabul {
+public class Anabul2 {
     String nama;
 
-    public Anabul(String nama) {
+    public Anabul2(String nama) {
         this.nama = nama;
     }
 

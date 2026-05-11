@@ -3,18 +3,14 @@
 //24060124140170
 //28 April 2026
 
-public class Kucing extends Anabul {
+public class Kucing2 extends Anabul2 {
     int bobot;
 
-    public Kucing(String nama, int bobot) {
+    public Kucing2(String nama, int bobot) {
         super(nama);
         this.bobot = bobot;
     }
 
-    public int getBobot() {
-        return this.bobot;
-    }
-
     @Override
     public void gerak() {
         System.out.println(this.nama + " bergerak dengan melata");
@@ -26,34 +22,14 @@ public class Kucing extends Anabul {
     }
 }
 
-class Anggora extends Kucing {
+class Anggora extends Kucing2 {
     public Anggora(String nama, int bobot) {
         super(nama, bobot);
     }
-
-    @Override
-    public void gerak() {
-        System.out.println(this.nama + " bergerak dengan melata");
-    }
-
-    @Override
-    public void bersuara() {
-        System.out.println(this.nama + " berbunyi: meong!");
-    }
 }
 
-class Kembangtelong extends Kucing {
+class Kembangtelong extends Kucing2 {
     public Kembangtelong(String nama, int bobot) {
         super(nama, bobot);
-    }
-
-    @Override
-    public void gerak() {
-        System.out.println(this.nama + " bergerak dengan melata");
-    }
-
-    @Override
-    public void bersuara() {
-        System.out.println(this.nama + " berbunyi: meong!");
     }
 }
