@@ -1,11 +1,17 @@
+//Naufal Rayan Attallah
+//24060124140170
+//Teman.java
+
 import java.util.ArrayList;
 
 public class Teman {
     private int nbelm;
     private ArrayList<String> Lnama;
+    //private int maxNbelm = -1;
     
     public Teman() {
         this.Lnama = new ArrayList<>();
+        this.nbelm = 0;
     }
 
     public int getNbelm() {
@@ -17,12 +23,6 @@ public class Teman {
             return Lnama.get(index);
         } else {
             return null;
-        }
-    }
-
-    public void setNbelm(int nbelm) {
-        if (nbelm >= 0) {
-            this.nbelm = nbelm;
         }
     }
 
@@ -60,5 +60,11 @@ public class Teman {
             }
         }
         return count;
+    }
+
+    public void showTeman() {
+        for (String nama : Lnama) {
+            System.out.println("- " + nama);
+        }
     }
 }
